@@ -16,7 +16,7 @@ with lib; let
         scheme = config.colorScheme;
       in {
         primary = "#${scheme.palette.base08}"; # red
-        secondary = "#${scheme.palette.base0B}"; # green
+        secondary = "#${scheme.palette.base0C}"; # cyan
         tertiary = "#${scheme.palette.base03}"; # bright black
         success = "#${scheme.palette.base0A}"; # yellow
         error = "#${scheme.palette.base08}"; # red
@@ -28,7 +28,7 @@ with lib; let
         colors = config.stylix.base16Scheme;
       in {
         primary = "#${colors.base08}";
-        secondary = "#${colors.base0B}";
+        secondary = "#${colors.base0C}";
         tertiary = "#${colors.base03}";
         success = "#${colors.base0A}";
         error = "#${colors.base08}";
