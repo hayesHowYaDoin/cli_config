@@ -25,7 +25,7 @@ with lib; let
     then
       # Extract from stylix if available
       let
-        colors = config.stylix.base16Scheme;
+        colors = config.lib.stylix.colors;
       in {
         primary = "#${colors.base08}";
         secondary = "#${colors.base0D}";
