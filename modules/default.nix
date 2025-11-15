@@ -1,5 +1,10 @@
-{pkgs, ...}: {
-  imports = [./git.nix ./nvim.nix ./zsh.nix];
+inputs: {pkgs, ...}: {
+  imports = [
+    ./git.nix 
+    ./nvim.nix 
+    ./zsh.nix
+    inputs.nvim_config.homeManagerModules.default
+  ];
 
   home.packages = with pkgs; [
     bat

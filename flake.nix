@@ -26,6 +26,6 @@
     nvim_config,
     ...
   } @ inputs: {
-    homeManagerModules.default = import ./modules/default.nix;
+    homeManagerModules.default = import ./modules/default.nix inputs;
   };
 }
