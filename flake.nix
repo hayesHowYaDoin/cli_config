@@ -9,11 +9,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-colors = {
-      url = "github:misterio77/nix-colors";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nvim_config = {
       url = "github:hayesHowYaDoin/nvim_config";
       inputs.nixpkgs.follows = "nixpkgs";
