@@ -30,6 +30,7 @@ in {
       default = null;
       description = "See github:hayesHowYaDoin/nvim_config for nix-colors options.";
     };
+    transparentBackground = lib.mkEnableOption "transparent background for Neovim";
   };
 
   config = mkIf cfg.enable {
@@ -40,6 +41,7 @@ in {
         then {inherit (cfg.theme) name style;}
         else null;
       colorScheme = cfg.colorScheme;
+      transparentBackground = cfg.transparentBackground;
     };
   };
 }
