@@ -1,7 +1,7 @@
 inputs: {pkgs, ...}: {
   imports = [
-    ./git.nix 
-    ./nvim.nix 
+    ./git.nix
+    ./nvim.nix
     ./zsh.nix
     inputs.nvim_config.homeManagerModules.default
   ];

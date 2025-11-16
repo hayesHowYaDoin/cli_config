@@ -15,12 +15,7 @@
     };
   };
 
-  outputs = {
-    home-manager,
-    nixpkgs,
-    nvim_config,
-    ...
-  } @ inputs: {
+  outputs = inputs: {
     homeManagerModules.default = import ./modules/default.nix inputs;
   };
 }
