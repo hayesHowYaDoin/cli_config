@@ -3,7 +3,7 @@ inputs: {pkgs, ...}: {
     ./git.nix
     ./nvim.nix
     ./zsh.nix
-    inputs.nvim_config.homeManagerModules.default
+    inputs.nvim-config.homeManagerModules.default
   ];
 
   home.packages = with pkgs; [

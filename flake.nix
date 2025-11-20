@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvim_config = {
+    nvim-config = {
       url = "github:hayesHowYaDoin/nvim_config";
       inputs.nixpkgs.follows = "nixpkgs";
     };
