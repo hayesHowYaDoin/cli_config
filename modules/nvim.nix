@@ -31,6 +31,29 @@ in {
       description = "See github:hayesHowYaDoin/nvim_config for nix-colors options.";
     };
     transparentBackground = lib.mkEnableOption "transparent background for Neovim";
+    obsidian = lib.mkOption {
+      type = lib.types.nullOr (lib.types.submodule {
+        options = {
+          vaultPath = lib.mkOption {
+            type = lib.types.str;
+            default = "~/notes";
+            description = "Path to your Obsidian vault";
+          };
+          dailyNotesFolder = lib.mkOption {
+            type = lib.types.str;
+            default = "daily";
+            description = "Folder for daily notes within your vault";
+          };
+          templatesFolder = lib.mkOption {
+            type = lib.types.str;
+            default = "templates";
+            description = "Folder for note templates within your vault";
+          };
+        };
+      });
+      default = null;
+      description = "Obsidian.nvim configuration. Set to null to disable, or provide configuration to enable.";
+    };
   };
 
   config = mkIf cfg.enable {
@@ -42,6 +65,7 @@ in {
         else null;
       colorScheme = cfg.colorScheme;
       transparentBackground = cfg.transparentBackground;
+      obsidian = cfg.obsidian;
     };
   };
 }
