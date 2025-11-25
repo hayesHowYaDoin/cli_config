@@ -135,11 +135,11 @@
         "nvf": "nvf"
       },
       "locked": {
-        "lastModified": 1763356902,
-        "narHash": "sha256-WJrObytDpWkN+G+Xcc0ws8rcM8O4A+9OvudWKGiy1cU=",
+        "lastModified": 1764050555,
+        "narHash": "sha256-/8AFvCFD/RksR2i17ehg9TpATPk7nb61GlTXv+MaJm4=",
         "owner": "hayesHowYaDoin",
         "repo": "nvim_config",
-        "rev": "47e98803f2511abfac99b2160cdf92773f17ff86",
+        "rev": "7b588e005a74dfd9630945f56f0b710ca03619e5",
         "type": "github"
       },
       "original": {
