@@ -16,6 +16,7 @@ inputs: {pkgs, ...}: {
     direnv
     dust
     eza
+    fastmod
     fd
     fzf
     htop
@@ -30,6 +31,7 @@ inputs: {pkgs, ...}: {
     tmux
     typst
     usbutils
+    xclip
     yazi
     zip
     zoxide
