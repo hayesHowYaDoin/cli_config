@@ -1,5 +1,6 @@
 inputs: {pkgs, ...}: {
   imports = [
+    ./claude.nix
     ./git.nix
     ./nvim.nix
     ./zsh.nix
@@ -10,7 +11,6 @@ inputs: {pkgs, ...}: {
     bat
     caligula
     chafa
-    claude-code
     coreutils
     devenv
     direnv
